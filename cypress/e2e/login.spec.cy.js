@@ -14,7 +14,7 @@ const selectorlist = {
   
 
   it('Login - Success', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    cy.visit('auth/login')
     cy.get(selectorlist.usernameField).type(userData.userSuccess.username)
     cy.get(selectorlist.passwordFIeld).type(userData.userSuccess.password)
     cy.get(selectorlist.loginButton).click()
